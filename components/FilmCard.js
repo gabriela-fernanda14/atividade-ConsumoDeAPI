@@ -15,71 +15,70 @@ export default function FilmCard({ character }) {
       <View style={styles.info}>
         {/* Nome principal */}
         <Text style={styles.title}>
-          {character.name ?? "Name not available"}
+          {character.name ?? "Nome não disponível"}
         </Text>
 
         {/* Nomes alternativos */}
         <Text style={styles.subtitle}>
-          {character.alternate_names[1] ?? "Alternate name not available"}
+          {character.alternate_names[1] ?? "Nome alternativo não disponível"}
         </Text>
 
         {/* Casa */}
         <Text style={styles.text}>
-          🏠 House: {character.house ?? "House not available"}
+          🏠 Casa: {character.house ?? "Casa não disponível"}
         </Text>
 
         {/* Data de nascimento */}
         <Text style={styles.text}>
-          📅 Date of Birth: {character.dateOfBirth ?? "Not available"}
+          📅 Data de Nascimento: {character.dateOfBirth ?? "Não disponível"}
         </Text>
 
         {/* É mago */}
         <Text style={styles.text}>
-          🧙‍♂️ Wizard: {character.wizard ? "Yes" : "No"}
+          🧙‍♂️ Mago: {character.wizard ? "Sim" : "Não"}
         </Text>
 
         {/* Ancestralidade */}
         <Text style={styles.text}></Text>
         {/* Cor dos olhos e cabelo */}
         <Text style={styles.text}>
-          👁️ Eye color: {character.eyeColour ?? "Not informed"}
+          👁️ Cor dos olhos: {character.eyeColour ?? "Não informado"}
         </Text>
         <Text style={styles.text}>
-          💇 Hair color: {character.hairColour ?? "Not informed"}
+          💇 Cor do cabelo: {character.hairColour ?? "Não informado"}
         </Text>
 
         <Text style={styles.text}></Text>
 
         {/* Patrono */}
         <Text style={styles.text}>
-          🦌 Patronus: {character.patronus ?? "Not informed"}
+          🦌 Patrono: {character.patronus ?? "Não informado"}
         </Text>
 
         {/* Ator */}
         <Text style={styles.text}>
-          🎭 Actor: {character.actor ?? "Not informed"}
+          🎭 Ator: {character.actor ?? "Não informado"}
         </Text>
+
+        
+            {/* Estudante ou funcionário de Hogwarts */}
+            <Text style={styles.text}>
+              🎓 Estudante de Hogwarts: {character.hogwartsStudent ? "Sim" : "Não"}
+            </Text>
+            <Text style={styles.text}>
+              🧑‍🏫 Funcionário de Hogwarts: {character.hogwartsStaff ? "Sim" : "Não"}
+            </Text>
 
         <View style={styles.subtitleContainer}>
           {/* Espécie */}
           <Text style={styles.subtitleSpecies}>
-            {character.species?.toUpperCase() ?? "Species not available"}
+            {character.species?.toUpperCase() ?? "Espécie não disponível"}
           </Text>
-
-          <Text style={styles.and}>and</Text>
-
+          <Text style={styles.and}>e</Text>
           <Text style={styles.subtitleGender}>
             {/* Gênero */}
-            {character.gender?.toUpperCase() ?? "Gender not available"}
-
-            {/* Estudante ou funcionário de Hogwarts */}
-            <Text style={styles.text}>
-              🎓 Hogwarts Student: {character.hogwartsStudent ? "Yes" : "No"}
-            </Text>
-            <Text style={styles.text}>
-              🧑‍🏫 Hogwarts Staff: {character.hogwartsStaff ? "Yes" : "No"}
-            </Text>
-          </Text>
+            {character.gender?.toUpperCase() ?? "Gênero não disponível"}
+          </Text>{" "}
         </View>
       </View>
     </View>

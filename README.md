@@ -1,20 +1,19 @@
-# Expo Router Example
+# 📱 Studio Ghibli App
 
-Use [`expo-router`](https://docs.expo.dev/router/introduction/) to build native navigation using files in the `app/` directory.
+Este é um aplicativo desenvolvido em **React Native** utilizando **Expo** E **Axios**, que exibe informações sobre personagens da API de Harry Potter.
 
-## 🚀 How to use
+## 🚀 Funcionalidades
 
-```sh
-npx create-expo-app -e with-router
-```
+- Exibição de uma lista de personagens com detalhes como nome, casa, data de nascimento, entre outros.
+- Skeleton loading enquanto os dados são carregados.
+- Interface estilizada e responsiva.
 
-## Deploy
+## 🛠️ Tecnologias Utilizadas
 
-Deploy on all platforms with Expo Application Services (EAS).
+- **React Native**
+- **Expo**
+- **Axios** (para requisições HTTP)
 
-- Deploy the website: `npx eas-cli deploy` — [Learn more](https://docs.expo.dev/eas/hosting/get-started/)
-- Deploy on iOS and Android using: `npx eas-cli build` — [Learn more](https://expo.dev/eas)
+## 👩‍💻 Desenvolvido por
 
-## 📝 Notes
-
-- [Expo Router: Docs](https://docs.expo.dev/router/introduction/)
+- Gabriela Fernanda

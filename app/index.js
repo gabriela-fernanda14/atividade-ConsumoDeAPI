@@ -19,7 +19,7 @@ export default function Home() {
 
   return (
     <SafeAreaView style={styles.container}>
-      <Text style={styles.header}>🎥 Filmes Studio Ghibli</Text>
+      <Text style={styles.header}>API Harry Potter</Text>
       {loading ? (
         <FlatList
           data={[1, 2, 3, 4, 5]}
